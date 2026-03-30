@@ -1,0 +1,378 @@
+:root {
+  color-scheme: light;
+  --bg: #eef4ff;
+  --bg-accent: #d9e5ff;
+  --card: rgba(255, 255, 255, 0.78);
+  --card-strong: #ffffff;
+  --line: rgba(72, 99, 153, 0.14);
+  --text: #183153;
+  --muted: #5d7397;
+  --blue: #4b7bff;
+  --mint: #44c9a1;
+  --rose: #ff7a8a;
+  --amber: #ffbf66;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Segoe UI", "PingFang SC", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(104, 149, 255, 0.26), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(68, 201, 161, 0.2), transparent 20%),
+    linear-gradient(180deg, var(--bg) 0%, #f7f9ff 100%);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 22px 18px 104px;
+}
+
+.shell {
+  max-width: 460px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.heroCard,
+.actionCard,
+.progressCard,
+.statusCard,
+.recordsCard,
+.listHero,
+.statusHero {
+  border: 1px solid var(--line);
+  background: var(--card);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 18px 40px rgba(91, 125, 188, 0.12);
+}
+
+.heroCard {
+  padding: 20px;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(75, 123, 255, 0.92), rgba(95, 198, 255, 0.84)),
+    var(--card);
+  color: #ffffff;
+}
+
+.heroTop,
+.cardHeader,
+.progressMeta,
+.connectRow,
+.recordRow,
+.recordMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chip,
+.statusBadge,
+.miniBadge,
+.ghostButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+.chip {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ghostButton {
+  border: 0;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.16);
+  color: inherit;
+}
+
+.scoreLabel,
+.sectionTitle,
+.walletText,
+.recordHash,
+.recordTime,
+.statusMeta,
+.subtleLink {
+  color: var(--muted);
+}
+
+.scoreLabel {
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+.scoreValue,
+.listCount,
+.statusBig {
+  font-size: clamp(52px, 16vw, 74px);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+}
+
+.connectRow {
+  margin-top: 24px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.statusDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.statusDot.online {
+  background: #a5ffd2;
+  box-shadow: 0 0 0 6px rgba(165, 255, 210, 0.14);
+}
+
+.walletText {
+  color: rgba(255, 255, 255, 0.82);
+  word-break: break-all;
+}
+
+.actionCard,
+.progressCard,
+.recordsCard,
+.statusCard,
+.listHero,
+.statusHero {
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.earnGrid,
+.gridTwo {
+  display: grid;
+  gap: 12px;
+}
+
+.earnGrid {
+  margin-top: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gridTwo {
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.primaryButton,
+.earnButton {
+  border: 0;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+
+.primaryButton {
+  padding: 13px 18px;
+  background: linear-gradient(135deg, var(--blue), #7197ff);
+  color: white;
+  box-shadow: 0 12px 26px rgba(75, 123, 255, 0.28);
+}
+
+.centerButton {
+  justify-content: center;
+  display: inline-flex;
+}
+
+.earnButton {
+  min-height: 88px;
+  background: var(--card-strong);
+  color: var(--text);
+  font-size: 28px;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px rgba(75, 123, 255, 0.08);
+}
+
+.earnButton.active {
+  background: linear-gradient(135deg, #dff0ff, #ecfff9);
+}
+
+.primaryButton:disabled,
+.earnButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.progressBar {
+  margin-top: 16px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(75, 123, 255, 0.12);
+  overflow: hidden;
+}
+
+.progressBar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--mint), var(--blue));
+}
+
+.statusCard {
+  display: grid;
+  gap: 14px;
+  align-content: space-between;
+}
+
+.statusBadge,
+.miniBadge {
+  width: fit-content;
+  padding: 7px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.statusBadge.pending,
+.miniBadge.pending {
+  background: rgba(255, 191, 102, 0.18);
+  color: #9c6200;
+}
+
+.statusBadge.success,
+.miniBadge.success {
+  background: rgba(68, 201, 161, 0.16);
+  color: #14775a;
+}
+
+.statusBadge.error,
+.miniBadge.error {
+  background: rgba(255, 122, 138, 0.18);
+  color: #b3294a;
+}
+
+.statusBadge.idle {
+  background: rgba(75, 123, 255, 0.12);
+  color: var(--blue);
+}
+
+.statusHash {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.recordList {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.recordRow {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.recordRow:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.recordRow.wide {
+  align-items: flex-start;
+}
+
+.recordAmount {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.recordHash,
+.recordTime,
+.statusMeta {
+  font-size: 13px;
+}
+
+.emptyState {
+  min-height: 84px;
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(75, 123, 255, 0.08), rgba(68, 201, 161, 0.08)),
+    var(--card-strong);
+}
+
+.bottomNav {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  width: min(420px, calc(100vw - 24px));
+  padding: 10px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(72, 99, 153, 0.12);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  box-shadow: 0 16px 38px rgba(63, 90, 145, 0.16);
+  backdrop-filter: blur(20px);
+}
+
+.bottomNavLink {
+  padding: 14px 10px;
+  text-align: center;
+  border-radius: 16px;
+  color: var(--muted);
+}
+
+.bottomNavLink.active {
+  background: linear-gradient(135deg, rgba(75, 123, 255, 0.14), rgba(68, 201, 161, 0.14));
+  color: var(--text);
+  font-weight: 700;
+}
+
+.listHero,
+.statusHero {
+  text-align: center;
+}
+
+.listHero {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.statusHero {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+@media (max-width: 640px) {
+  .gridTwo {
+    grid-template-columns: 1fr;
+  }
+
+  .earnGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
