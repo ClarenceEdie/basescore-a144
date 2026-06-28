@@ -96,3 +96,11 @@ A typical workflow for working on this repository is:
 Example branch command:
 
 ```bash
+git checkout -b your-change-name
+```
+
+## Testing
+
+No specific test command is documented in the original README.
+
+If the repository includes a test framework or test scripts, run them before submitting changes.
