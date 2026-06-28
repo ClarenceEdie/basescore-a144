@@ -25,3 +25,11 @@ Use this document as the primary entry point for understanding, setting up, and 
 Clone the repository from GitHub:
 
 ```bash
+git clone https://github.com/ClarenceEdie/basescore-a144.git
+```
+
+Then move into the project directory:
+
+```bash
+cd basescore-a144
+```
