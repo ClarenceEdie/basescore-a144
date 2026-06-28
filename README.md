@@ -69,3 +69,13 @@ If a build or run command is defined in the project files, use that command.
 For example, check for documented scripts in configuration files or a `Makefile`.
 
 Useful commands may include:
+
+```bash
+ls
+```
+
+```bash
+find . -maxdepth 2 -type f
+```
+
+These commands can help you understand the project structure before making changes.
