@@ -150,3 +150,12 @@ Before contributing, consider the following:
 
 - Keep changes limited to a single purpose when possible.
 - Follow the style already used in the repository.
+- Update documentation when behavior or setup steps change.
+- Run available checks before submitting changes.
+- Use descriptive commit messages.
+
+## Maintenance Notes
+
+This README is intended to be expanded as the project grows.
+
+Recommended future improvements include:
