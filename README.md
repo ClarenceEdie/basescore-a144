@@ -159,3 +159,11 @@ Before contributing, consider the following:
 This README is intended to be expanded as the project grows.
 
 Recommended future improvements include:
+
+- Add a detailed project description.
+- Document the technology stack.
+- Add exact installation commands.
+- Add exact run commands.
+- Add test instructions.
+- Add examples of expected input and output, if applicable.
+- Document release or deployment steps, if applicable.
