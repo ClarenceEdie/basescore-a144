@@ -79,3 +79,12 @@ find . -maxdepth 2 -type f
 ```
 
 These commands can help you understand the project structure before making changes.
+
+## Development Workflow
+
+A typical workflow for working on this repository is:
+
+1. Clone the repository.
+2. Create a new branch for your changes.
+3. Review the existing files and project structure.
+4. Install any required dependencies.
