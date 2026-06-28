@@ -141,3 +141,12 @@ Include details such as:
 - Example configuration files
 
 Do not commit sensitive information to the repository.
+
+## Contributing
+
+Contributions should be clear, focused, and easy to review.
+
+Before contributing, consider the following:
+
+- Keep changes limited to a single purpose when possible.
+- Follow the style already used in the repository.
