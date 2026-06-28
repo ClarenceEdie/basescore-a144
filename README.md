@@ -88,3 +88,11 @@ A typical workflow for working on this repository is:
 2. Create a new branch for your changes.
 3. Review the existing files and project structure.
 4. Install any required dependencies.
+5. Make focused changes.
+6. Run available tests, checks, or build commands.
+7. Commit your changes with a clear message.
+8. Open a pull request or merge according to the project鈥檚 process.
+
+Example branch command:
+
+```bash
