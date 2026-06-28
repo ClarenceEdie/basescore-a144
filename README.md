@@ -61,3 +61,11 @@ npm install
 If the repository contains a Python dependency file, use the appropriate Python environment and install dependencies as needed.
 
 ## Usage
+
+Start by reviewing the source files and any scripts included in the repository.
+
+If a build or run command is defined in the project files, use that command.
+
+For example, check for documented scripts in configuration files or a `Makefile`.
+
+Useful commands may include:
