@@ -132,3 +132,12 @@ Recommended items to document here in the future include:
 No required configuration values are documented in the original README.
 
 If configuration is needed, document it in this section.
+
+Include details such as:
+
+- Required environment variables
+- Optional settings
+- Local development defaults
+- Example configuration files
+
+Do not commit sensitive information to the repository.
