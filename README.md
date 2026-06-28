@@ -104,3 +104,13 @@ git checkout -b your-change-name
 No specific test command is documented in the original README.
 
 If the repository includes a test framework or test scripts, run them before submitting changes.
+
+Look for test-related files or folders such as:
+
+- `test`
+- `tests`
+- `spec`
+- `__tests__`
+- configuration files for test runners
+
+## Project Structure
