@@ -33,3 +33,13 @@ Then move into the project directory:
 ```bash
 cd basescore-a144
 ```
+
+## Setup
+
+After cloning the repository, inspect the project files to determine the required runtime, package manager, or build tools.
+
+Common files to look for include:
+
+- `package.json`
+- `requirements.txt`
+- `pyproject.toml`
