@@ -114,3 +114,12 @@ Look for test-related files or folders such as:
 - configuration files for test runners
 
 ## Project Structure
+
+The repository structure may vary depending on the implementation.
+
+After cloning, review the top-level files and directories to understand how the project is organized.
+
+Recommended items to document here in the future include:
+
+- Main source directory
+- Configuration files
