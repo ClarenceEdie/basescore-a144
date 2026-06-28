@@ -167,3 +167,13 @@ Recommended future improvements include:
 - Add test instructions.
 - Add examples of expected input and output, if applicable.
 - Document release or deployment steps, if applicable.
+
+## License
+
+No license information is provided in the original README.
+
+If a license applies to this project, add it to the repository and reference it here.
+
+## Links
+
+- Repository: https://github.com/ClarenceEdie/basescore-a144.git
