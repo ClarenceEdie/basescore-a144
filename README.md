@@ -123,3 +123,12 @@ Recommended items to document here in the future include:
 
 - Main source directory
 - Configuration files
+- Build output location
+- Test directory
+- Entry point or executable file
+
+## Configuration
+
+No required configuration values are documented in the original README.
+
+If configuration is needed, document it in this section.
