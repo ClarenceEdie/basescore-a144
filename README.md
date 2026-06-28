@@ -51,3 +51,13 @@ Common files to look for include:
 - `Dockerfile`
 
 If dependency files are present, install dependencies using the appropriate tool for the project.
+
+For example, if the repository contains a `package.json`, run:
+
+```bash
+npm install
+```
+
+If the repository contains a Python dependency file, use the appropriate Python environment and install dependencies as needed.
+
+## Usage
