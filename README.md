@@ -43,3 +43,11 @@ Common files to look for include:
 - `package.json`
 - `requirements.txt`
 - `pyproject.toml`
+- `Cargo.toml`
+- `go.mod`
+- `pom.xml`
+- `build.gradle`
+- `Makefile`
+- `Dockerfile`
+
+If dependency files are present, install dependencies using the appropriate tool for the project.
